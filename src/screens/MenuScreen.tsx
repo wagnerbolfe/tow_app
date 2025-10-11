@@ -1,14 +1,14 @@
 import { StyleSheet, Text, View } from "react-native";
 import React from "react";
 
-const AuthStackNav = () => {
+const MenuScreen = () => {
   return (
     <View>
-      <Text>AuthStackNav</Text>
+      <Text>MenuScreen</Text>
     </View>
   );
 };
 
-export default AuthStackNav;
+export default MenuScreen;
 
 const styles = StyleSheet.create({});
