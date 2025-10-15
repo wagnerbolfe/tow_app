@@ -32,7 +32,7 @@ const getTabBarIcon = ({ focused, size, routeName }: TabBarIconProps) => {
     iconName = focused ? "menu" : "menu-outline";
   }
 
-  return <Ionicons name={iconName} size={size} color={focused ? "#108e38" : "gray"} />;
+  return <Ionicons name={iconName} size={size} color={focused ? "bg-green-600" : "gray"} />;
 };
 
 const BottomTabNavigator: React.FC = () => {
@@ -51,7 +51,7 @@ const BottomTabNavigator: React.FC = () => {
         },
         tabBarIcon: ({ focused, size }) =>
           getTabBarIcon({ focused, size, routeName: route.name as keyof BottomTabParamList }),
-        tabBarActiveTintColor: "#108e38",
+        tabBarActiveTintColor: "bg-green-600",
         tabBarInactiveTintColor: "gray",
       })}
     >

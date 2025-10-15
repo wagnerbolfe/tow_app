@@ -29,7 +29,7 @@ const AppContainer = () => {
       onStateChange={handleStateChange}
       onReady={setIsNavigationReady}
     >
-      <Stack.Navigator>
+      <Stack.Navigator screenOptions={{headerShown: false}}>
         {isAuthenticated ? (
           <Stack.Screen name={ROUTES.MAIN_TABS} component={BottomTabNavigator} />
         ) : (
